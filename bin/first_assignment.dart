@@ -1,8 +1,8 @@
 void main() {
   double? calculate(double? num1, double? num2, String? operation) {
     // reassign the parameters to zero if it null 
-    num1 = num1 ?? 0.0;
-    num2 = num2 ?? 0.0;
+    num1 ??= 0.0;
+     num2 ??= 0.0;
 
     switch (operation) {
       case "+":
